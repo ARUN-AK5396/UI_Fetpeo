@@ -1,0 +1,228 @@
+.main_container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.left_container{
+    width: 13%;
+    height: 1150px;
+    background: rgb(80,170,237);
+    background: linear-gradient(180deg, rgb(97, 242, 136) 0%, rgb(43, 210, 239) 100%);
+    padding-left: 20px;
+}
+.setting_icon{
+    margin-top: 4px;
+    margin-left: 10px;
+    position: absolute;
+    color: #fff;
+}
+.header_left{
+    margin-left: 50px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+.hi_img{
+    position: absolute;
+    margin-left: 110px;
+    margin-top: 10px;
+    height: 40px;
+    width: 40px;
+}
+.right_container{
+    position: absolute;
+    margin-left: 14%;
+    background-color: #f7f3f3;
+    height: 1150px;
+    width: 86%;
+}
+.header_text_right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.top_row_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.top_row_container::-webkit-scrollbar {
+    width: 1.4em;
+    height: 0.2em;
+}
+.middle_container::-webkit-scrollbar {
+    width: 1.4em;
+    height: 0.2em;
+}
+.row1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 10px;
+    width: 300px;
+    height: 160px;
+    margin-right: 30px;
+    box-shadow: #c8c5c5 10px 10px 10px 5px;
+
+}
+.icon_circle{
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 100px;
+    width: 100px;
+}
+.img_icon{
+    width: 60px;
+    height: 60px;
+    margin-left: 18px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.text_right{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.text1{
+    color: #c2bfbf;
+    margin-top: 40px;
+}
+.text_bottom{
+    display:flex ;
+    flex-direction: row;
+    margin-top: -38px;
+    justify-content: space-between;
+}
+.perc{
+    color: #6ae58b;
+}
+.search_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 10px    ;
+    margin-right: 50px;
+}
+  
+.search_input_container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+  
+.search_input_container input {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 15px;
+}
+  
+.search_icon {
+    cursor: pointer;
+    margin-left: 30px;
+}
+.middle_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.overview_container{
+    margin-top: 30px;
+    margin-left: 5%;
+}
+.customer_container{
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+
+@media only screen and (max-width: 1360px) {
+    .left_container{
+        display: none;
+    }
+    .right_container{
+        width: 100%;
+        background-color: #fff;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+   
+    .customer_container{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 1020px){
+    .row1{
+        box-shadow:none;
+        background-color: #f6f6f6;
+    }
+    .middle_container{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: scroll;
+        margin-left: 20px;
+        align-items: center;
+    }
+    .top_row_container{
+        overflow: scroll;
+    }
+}
+@media only screen and (max-width:400px) {
+    .right_container{
+        background-color: #fff;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .overview_container{
+        margin-left: 600px;
+    }
+    .header_text_right{
+        align-items: center;
+        margin-left: 30%;
+    }
+    .hi_img{
+        position: absolute;
+        margin-left: 90px;
+        margin-top: 10px;
+        height: 40px;
+        width: 40px;
+    }
+    .search_icon {
+        cursor: pointer;
+        margin-left: -30px;
+    }
+    .search_container{
+        margin-right: 10px;
+    }
+    .customer_container{
+        margin-left: 80px;
+        width: 380px;
+    }
+    .bottom_container{
+        margin-top: 500px;
+    }
+    .search_container{
+        display: none;
+    }
+}
