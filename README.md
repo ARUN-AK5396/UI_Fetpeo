@@ -3,3 +3,4 @@ cd ui_fetpeo
 npm install
 npm start
 
+#To check the live demo
