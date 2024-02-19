@@ -4,3 +4,4 @@ npm install
 npm start
 
 #To check the live demo
+https://assignment-by-fetpeo.netlify.app/
